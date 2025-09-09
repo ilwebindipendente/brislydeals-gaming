@@ -1,0 +1,29 @@
+# Core
+python-telegram-bot==20.7
+python-dotenv==1.0.0
+
+# Scraping
+requests==2.31.0
+beautifulsoup4==4.12.2
+lxml==4.9.3
+
+# Database
+redis==5.0.1
+upstash-redis==1.0.0
+
+# Image processing
+Pillow==10.1.0
+
+# Utilities
+schedule==1.2.0
+pytz==2023.3
+
+# Data processing
+pandas==2.1.4
+
+# Monitoring
+sentry-sdk==1.39.1
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1

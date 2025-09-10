@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 import logging
 from typing import Dict, List, Optional
 from datetime import datetime
+from .mock_data import MockDataProvider
 
 logger = logging.getLogger(__name__)
 
@@ -24,48 +25,15 @@ class InstantGamingScraper:
     def scrape_deals(self, max_deals: int = 10) -> List[Dict]:
         """
         Scraping delle migliori offerte
-        
-        Returns:
-            Lista di dizionari con i dati delle offerte
+        TEMPORANEO: Usa mock data mentre fixiamo lo scraping reale
         """
-        deals = []
+        logger.info("🎮 Usando MOCK DATA per Instant Gaming (temporaneo)")
         
-        try:
-            # URL delle offerte principali
-            url = f"{self.base_url}search/?discount=50"
-            
-            logger.info(f"🔍 Scraping Instant Gaming: {url}")
-            response = requests.get(url, headers=self.headers)
-            
-            if response.status_code != 200:
-                logger.error(f"❌ Errore HTTP: {response.status_code}")
-                return deals
-                
-            soup = BeautifulSoup(response.content, 'html.parser')
-            
-            # TODO: Implementare parsing reale della pagina
-            # Per ora ritorniamo dati di esempio
-            
-            example_deal = {
-                'source': 'instant_gaming',
-                'title': 'Cyberpunk 2077',
-                'platform': 'Steam',
-                'original_price': 59.99,
-                'discounted_price': 19.99,
-                'discount_percent': 67,
-                'url': f"{self.base_url}esempio{self.affiliate_tag}",
-                'image_url': None,
-                'metacritic_score': 86,
-                'release_year': 2020,
-                'scraped_at': datetime.now().isoformat()
-            }
-            
-            deals.append(example_deal)
-            logger.info(f"✅ Trovate {len(deals)} offerte da Instant Gaming")
-            
-        except Exception as e:
-            logger.error(f"❌ Errore scraping: {e}")
-            
+        # USA MOCK DATA
+        provider = MockDataProvider()
+        deals = provider.get_instant_gaming_deals(max_deals)
+        
+        logger.info(f"✅ Trovate {len(deals)} offerte mock da Instant Gaming")
         return deals
     
     def get_deal_details(self, game_url: str) -> Optional[Dict]:
@@ -78,8 +46,9 @@ class InstantGamingScraper:
         Returns:
             Dizionario con i dettagli o None
         """
-        # TODO: Implementare scraping dettagliato
-        pass
+        # TODO: Implementare scraping dettagliato quando risolviamo il blocco
+        logger.info(f"📝 get_deal_details non ancora implementato per: {game_url}")
+        return None
     
     def calculate_savings(self, original: float, discounted: float) -> Dict:
         """

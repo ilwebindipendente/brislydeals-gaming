@@ -1,0 +1,64 @@
+13:30:40 - INFO - 🔍 Scraping Instant Gaming: https://www.instant-gaming.com/it/search/?discount=50
+13:30:40 - ERROR - ❌ Errore HTTP: 404
+13:30:40 - INFO - 🔍 Tentativo scraping GAMIVO: https://www.gamivo.com/it/top-deals
+13:30:40 - ERROR - ❌ HTTP 403 per https://www.gamivo.com/it/top-deals
+13:30:40 - INFO - 🔍 Tentativo scraping GAMIVO: https://www.gamivo.com/it/games/bestsellers
+13:30:40 - ERROR - ❌ HTTP 403 per https://www.gamivo.com/it/games/bestsellers
+13:30:40 - INFO - 🔍 Tentativo scraping GAMIVO: https://www.gamivo.com/it/pc-games
+13:30:40 - ERROR - ❌ HTTP 403 per https://www.gamivo.com/it/pc-games
+13:30:40 - INFO - 📦 Usando dati esempio per GAMIVO
+13:30:40 - INFO - ✅ Totale offerte GAMIVO trovate: 1
+13:30:40 - INFO - 📊 BrislyScore: 18.2 - BUONA_OFFERTA 👍
+
+🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮
+     BRISLY GAMING BOT - SCRAPER TEST SUITE
+🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮
+
+⏰ Test avviato: 2025-09-09 13:30:40
+
+============================================================
+🎮 TESTING INSTANT GAMING SCRAPER
+============================================================
+❌ Nessuna offerta trovata!
+
+============================================================
+🎮 TESTING GAMIVO SCRAPER
+============================================================
+✅ Trovate 1 offerte
+
+📦 Deal #1: Hogwarts Legacy
+   💰 Prezzo: 69.99€ → 29.99€
+   📊 Sconto: -57%
+   🎮 Platform: Steam
+   🔗 URL: https://www.gamivo.com/product/hogwarts-legacy?glv=indiedeal...
+
+
+============================================================
+🏆 TESTING BRISLYSCORE™ ALGORITHM
+============================================================
+
+🏆 TOP DEALS PER BRISLYSCORE™:
+
+1. 👍 Hogwarts Legacy
+   Score: 18.2/45 - BUONA_OFFERTA
+   Fonte: GAMIVO
+   Prezzo: 29.99€ (-57%)
+   👍 Buon prezzo, vale la pena considerarlo!
+
+
+============================================================
+📊 CONFRONTO FONTI
+============================================================
+
+📈 Instant Gaming: 0 offerte
+📈 GAMIVO: 1 offerte
+💰 Miglior prezzo GAMIVO: Hogwarts Legacy a 29.99€
+
+🔥 Miglior sconto: Hogwarts Legacy -57% (GAMIVO)
+
+============================================================
+✅ TEST COMPLETATO!
+📊 Totale offerte analizzate: 1
+============================================================
+
+💾 Pronto per salvare 1 offerte nel database!
